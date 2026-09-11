@@ -1,0 +1,10 @@
+{
+  "name": "nospopo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension that removes podcasts and audiobooks from the Spotify web player.",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "gen": "node tools/gen-css.js && node tools/gen-icons.js"
+  }
+}

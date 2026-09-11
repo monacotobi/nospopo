@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+  <title>nospopo</title>
+</head>
+<body>
+  <main id="app" class="is-loading">
+    <header>
+      <span class="dot" aria-hidden="true"></span>
+      <h1>nospopo</h1>
+    </header>
+
+    <!-- filter on -->
+    <section id="panel-on" hidden>
+      <p class="state">No podcasts. No audiobooks.</p>
+      <p class="hint">Drag to the end and hold to switch the filter off.</p>
+      <div id="track" class="track" role="group" aria-label="Drag and hold to switch the filter off">
+        <div id="fill" class="fill"></div>
+        <button id="handle" class="handle" type="button" aria-label="Drag to the right and hold">
+          <span aria-hidden="true">›</span>
+        </button>
+        <span id="trackLabel" class="track-label">slide to switch off</span>
+      </div>
+      <p class="foot">It switches itself on again after 30 minutes.</p>
+    </section>
+
+    <!-- filter off -->
+    <section id="panel-off" hidden>
+      <p class="state state--off">The filter is off.</p>
+      <p class="hint" id="countdown">It switches on again in 30 minutes.</p>
+      <button id="turnOn" class="primary" type="button">Turn the filter on</button>
+    </section>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
