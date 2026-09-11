@@ -8,6 +8,29 @@ episode. The extension does not block spoken audio: search still finds a
 podcast, and a direct link still plays it. It removes the invitation, not the
 content.
 
+## Before and after
+
+The same Spotify home page, with the filter off and with the filter on. The top
+bar is cut out of both pictures.
+
+**Before** — the whole home page.
+
+![Spotify home page with the filter off: the chips hold All, Music, Podcasts and Audiobooks, three shortcut tiles are podcast episodes, and the sidebar holds Your Episodes and two podcast rows.](docs/screenshots/before.jpg)
+
+**After** — the same page with the filter on.
+
+![The same page with the filter on: the chips hold All and Music, the tile grid holds five music tiles and no hole, and the sidebar holds playlists only.](docs/screenshots/after.jpg)
+
+Three things change:
+
+| Surface | Before | After |
+|---|---|---|
+| Filter chips | `All` `Music` `Podcasts` `Audiobooks` | `All` `Music` |
+| Shortcut tiles | 8 tiles, 3 of them podcast episodes | 5 music tiles, no hole |
+| Sidebar | `Your Episodes` and 2 podcast rows | playlists only |
+
+The player keeps its position, and the music keeps playing.
+
 ## Install
 
 1. Open `chrome://extensions`.
