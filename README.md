@@ -140,3 +140,7 @@ The badge shows a grey `?` when the home page holds no
 `[data-encore-id="card"]` at all. That means the markup changed and the rules
 need repair. The console holds one `[nospopo]` warning. The extension stops; it
 never breaks the player.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
